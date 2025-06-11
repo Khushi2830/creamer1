@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
+            $table->string("cat_title")->unique();
+            $table->text("cat_description")->nullable();
+            $table->string("cover_image");
+            $table->foreignId("category_id")->nullable()->constrained("categories")->onDelete("CASCADE");
             $table->timestamps();
         });
     }
