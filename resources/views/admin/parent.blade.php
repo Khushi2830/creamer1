@@ -186,7 +186,7 @@
 
   <div class="header">
     <div class="d-flex align-items-center">
-      <div class="logo"><img src="{{ asset("logo.png") }}" width="250px" alt=""></div>
+      <div class="logo"><img src="{{ asset("logo.png") }}" width="150px" alt=""></div>
     </div>
 
     <div class="search-box">
