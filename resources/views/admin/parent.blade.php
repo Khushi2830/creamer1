@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>creamer dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+       body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .sidebar {
+      width: 260px;
+      min-height: 100vh;
+      background-color: #5f3dc4;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .sidebar .brand {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px 0;
+      margin-bottom: 15px;
+      background-color: #4c32a1;
+    }
+
+    .sidebar .section-title {
+      padding: 10px 20px;
+      font-size: 12px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      letter-spacing: 1px;
+    }
+
+    .sidebar .menu-item {
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .sidebar .menu-item:hover, .sidebar .menu-item.active {
+      background-color: #7b5de4;
+    }
+
+    .sidebar .menu-item i {
+      margin-right: 10px;
+    }
+
+    .submenu {
+      padding-left: 40px;
+      background-color: #6845c7;
+    }
+
+    .submenu a {
+      color: #e0e0e0;
+      font-size: 14px;
+      padding: 8px 0;
+      display: block;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .submenu a:hover {
+      color: white;
+    }
+    .header {
+      background-color: #e4e0f4;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #eccffd;
+    }
+    .partner {
+      margin-left: 10px;
+      font-weight: 500;
+    }
+    .search-box {
+      max-width: 500px;
+      flex-grow: 1;
+      margin: 0 20px;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 10px 40px 10px 15px;
+      border-radius: 6px;
+      border: 1px solid #5369c0;
+    }
+    .search-box i {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: gray;
+    }
+    .icons i, .icons .profile {
+      font-size: 22px;
+      margin-left: 20px;
+      color:#5369c0;
+      cursor: pointer;
+    }
+    .icons .profile {
+      background-color: #fbd25b;
+      color: white;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="d-flex align-items-center">
+      <div class="logo"><img src="{{ asset("logo.png") }}" width="250px" alt=""></div>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search for cakes, pastries, savories, etc.">
+      <i class="fas fa-search"></i>
+    </div>
+
+    <div class="icons d-flex align-items-center" width="" >
+      <div class="profile lg">AK</div>
+    </div>
+  </div>
+   @section('content')
+   @show
+</body>
+</html>
