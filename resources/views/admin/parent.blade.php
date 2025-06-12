@@ -8,6 +8,23 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <style>
+    .form-control-custom {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control-custom:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+
+.form-error {
+    font-size: 0.875rem;
+    color: #dc3545;
+}
+
       .stat-card {
       background: #fff;
       border-radius: 10px;
@@ -15,6 +32,9 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       position: relative;
       overflow: hidden;
+      transform: translateY(-3px);
+      transition: all 0.2s ease-in-out;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
     }
 
     .stat-card .icon-box {
@@ -181,6 +201,8 @@
       font-size: 16px;
     }
   </style>
+  
+  
 </head>
 <body>
 
