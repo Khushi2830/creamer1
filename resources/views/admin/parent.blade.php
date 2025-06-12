@@ -8,11 +8,65 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <style>
-       body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      .stat-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: relative;
+      overflow: hidden;
     }
 
+    .stat-card .icon-box {
+      width: 40px;
+      height: 40px;
+      background-color: #6f42c1;
+      color: white;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .stat-card small {
+      color: #777;
+      display: block;
+    }
+
+    .stat-card h5 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .chart-bg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 60px;
+      background: url('https://www.chartjs.org/img/chartjs-logo.svg') no-repeat center right;
+      background-size: contain;
+      opacity: 0.1;
+    }
+
+    .mini-numbers {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .mini-numbers div {
+      text-align: center;
+    }
+
+    .mini-numbers strong {
+      display: block;
+      font-size: 16px;
+      color: #333;
+    }
     .sidebar {
       width: 260px;
       min-height: 100vh;

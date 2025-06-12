@@ -1,6 +1,4 @@
-@extends('admin.parent')
-@section('title', 'Dashboard')
-@section('content')
+
  
   <div class="sidebar">
 
@@ -18,5 +16,3 @@
     </div>
     <a href="#" class="menu-item active m-2 "><i class="fas fa-sign-out-alt"></i> Logout </a>
   </div>
-
-@endsection
