@@ -1,5 +1,5 @@
 @extends('admin.parent')
-@section('title', 'Dashboard')
+@section('title', 'Admin Dashboard')
 @section('content')
 
     <div class="container-fluid m-0 p-0">

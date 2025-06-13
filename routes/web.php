@@ -9,4 +9,5 @@ Route::get('/', function () {
 });
 
 Route::get("/dashboard", [AdminController::class, "index"])->name("dashboard");
-Route::resource("/insert", CategoryController::class, );
+Route::resource("/category", CategoryController::class, );
+
