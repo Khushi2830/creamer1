@@ -4,13 +4,11 @@
 
     <div class="container-fluid m-0 p-0">
         <div class="row ">
-            <div class="col-3">
                 <div class="col-md-3">
                     @include("admin.sidebar")
                 </div>
 
 
-            </div>
             <div class="col-9">
                 <div class="container py-5">
                     <div class="row g-4">

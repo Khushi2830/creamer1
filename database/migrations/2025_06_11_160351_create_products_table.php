@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string(column: "title")->unique();
             $table->text("description")->nullable();
             $table->float("price");
-            $table->float( "descount_price")->nullable();
+            $table->string( "descount_price")->nullable();
             $table->boolean("status")->default(false);
             $table->foreignId("category_id")->constrained()->onDelete("CASCADE");
             $table->string("image");

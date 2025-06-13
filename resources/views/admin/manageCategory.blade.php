@@ -32,7 +32,31 @@
                         </tr>
                     </thead>
                     <tbody class="text-center">
-                      
+                      @foreach ($categories as $category)
+                        <tr>
+                            <td>{{$category->id}}</td>
+                            <td>{{$category->cat_title}}</td>
+                            <td>
+                                @if ($category->category_id)
+                                    {{$category->parentCategory->cat_title}}
+                                @else
+                                    <span class="text-muted">No Parent Category</span>
+                                @endif
+                            </td>
+                            <td>{{$category->cat_description}}</td>
+                            <td>
+                                <img src="{{ asset('storage/' . $category->cover_image) }}" alt="{{ $category->cat_title }}" class="category-cover_image" width="100px">
+                                </td>
+                              <td class="text-center">
+                                        <a href="#" class="btn  btn-sm" style="background-color: blueviolet; color: white;">
+                                            <i class="bi bi-check-circle"></i> V
+                                        </a>
+                                        
+                                        <a href="#" class="btn  btn-sm"style="background-color: blueviolet; color: white;">
+                                            <i class="bi bi-x-circle"></i> D
+                                        </a>
+                                    </td>
+                      @endforeach
                     </tbody>
                 </table>
             </div>

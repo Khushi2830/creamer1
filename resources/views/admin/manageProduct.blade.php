@@ -44,18 +44,15 @@
                             <td><del>₹{{$product->price}}</del>₹{{$product->descount_price}}</td>
                             <td>{{$product->description}}</td>
                             <td><img src="{{ asset("storage/" . $product->image) }}" alt="{{ $product->title }}" class="product-image" width="100px"></td>
-                            <td>
-                              <div class="action-buttons">
-                                  <a href="" class="btn-view" title="View details">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                                    <span>View</span>
-                                  </a>
-                                 <a href="" class="btn-inactive" title="Mark as inactive">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
-                                  <span>Inactive</span>
-                                 </a>
-                             </div>
-                           </td>
+                            <td class="text-center">
+                                        <a href="#" class="btn  btn-sm" style="background-color: blueviolet; color: white;">
+                                            <i class="bi bi-check-circle"></i> V
+                                        </a>
+                                        
+                                        <a href="#" class="btn  btn-sm"style="background-color: blueviolet; color: white;">
+                                            <i class="bi bi-x-circle"></i> D
+                                        </a>
+                                    </td>
                         </tr>
                            
                        @endforeach

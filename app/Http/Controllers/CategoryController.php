@@ -12,7 +12,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-       return view("admin.manageCategory");
+         $categories = Category::all();
+       return view("admin.manageCategory", compact("categories"));
     }
 
     /**
@@ -41,7 +42,7 @@ class CategoryController extends Controller
         if ($request->hasFile('cover_image')) {
             $imageName = time().'.'.$request->cover_image->extension();
             $request->cover_image->move(public_path('images'), $imageName);
-            $category->cover_image = 'images/'.$imageName;
+            $category->cover_image = $imageName;
         }
 
         $category->save();
