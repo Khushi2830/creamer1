@@ -28,7 +28,6 @@
                             <th>Quantity</th>
                             <th>Veg/Non-Veg</th>
                             <th>Price</th>
-                            <th>Discount Price</th>
                             <th>Description</th>
                             <th>Image</th>
                             <th>Action</th>
@@ -42,9 +41,8 @@
                             <td><span>{{$product->category->cat_title}}</span></td>
                             <td>{{$product->kg}}</td>
                             <td>{{$product->veg}}</td>
-                            <td>{{$product->price}}</td>
-                            <td><span>{{$product->descount_price}}</span></td>
-                            <td>{{$Product->description}}</td>
+                            <td><del>₹{{$product->price}}</del>₹{{$product->descount_price}}</td>
+                            <td>{{$product->description}}</td>
                             <td><img src="{{ asset("storage/" . $product->image) }}" alt="{{ $product->title }}" class="product-image" width="100px"></td>
                             <td>
                               <div class="action-buttons">

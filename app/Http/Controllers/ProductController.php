@@ -35,10 +35,11 @@ class ProductController extends Controller
             'title' => 'required|string|max:255',
             'price' => 'required|numeric|min:0',
            'descount_price' => 'numeric|min:0',
-            'category_id' => 'nullable',
+            'category_id' => 'required|exists:categories,id',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            // 'kg' => 'required|string',
-            // 'veg' => 'required|string',
+            'kg' => 'required|string',
+             'veg' => 'required|string',
+             
         ]);
 
         $data["image"] = $request->file("image")->store("product_images","public");
