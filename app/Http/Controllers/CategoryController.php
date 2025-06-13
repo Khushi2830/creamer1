@@ -20,7 +20,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+    return view("admin.insertCategory");
     }
 
     /**
@@ -28,7 +28,25 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'cat_title' => 'required|unique:categories,cat_title',
+            'cat_description' => 'nullable',
+            'cover_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $category = new Category();
+        $category->cat_title = $request->cat_title;
+        $category->cat_description = $request->cat_description;
+
+        if ($request->hasFile('cover_image')) {
+            $imageName = time().'.'.$request->cover_image->extension();
+            $request->cover_image->move(public_path('images'), $imageName);
+            $category->cover_image = 'images/'.$imageName;
+        }
+
+        $category->save();
+
+        return redirect()->route('category.index')->with('success', 'Category created successfully.');
     }
 
     /**

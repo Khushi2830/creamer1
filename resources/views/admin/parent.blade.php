@@ -89,17 +89,18 @@
     }
     .sidebar {
       width: 260px;
-      min-height: 100vh;
+      min-height: 80vh;
       background-color: #5f3dc4;
       color: white;
-      padding: 20px 0;
+      padding: 10px 0px;
+      margin: 0;
     }
 
     .sidebar .brand {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
-      padding: 10px 0;
+      padding: 5px 0;
       margin-bottom: 15px;
       background-color: #4c32a1;
     }
