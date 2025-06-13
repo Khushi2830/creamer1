@@ -11,10 +11,6 @@ Route::get('/', function () {
 });
 
 Route::get("/dashboard", [AdminController::class, "index"])->name("dashboard");
-<<<<<<< HEAD
+
 Route::resource("/insert", CategoryController::class, );
 Route::resource("/product",ProductController::class, );
-=======
-Route::resource("/category", CategoryController::class, );
-
->>>>>>> 610d4ec79abefaa55d0706701a9159e8b8b34869
