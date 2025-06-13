@@ -12,8 +12,8 @@
         </div>
         <div class="col-lg-9">
             <div class="dashboard-header d-flex justify-content-between align-items-center mb-4">
-                <h2 class="page-title mb-0">Insert Product</h2>
-                <a href="{{ route('product.index') }}" class="btn btn-outline-secondary d-flex align-items-center gap-1">
+                <h2 class="page-title mb-0" style="color: #6f42c1;" >Insert Product</h2>
+                <a href="{{ route('product.index') }}" class="btn  d-flex align-items-center gap-1" style="background-color: #6f42c1; color: white;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="19" y1="12" x2="5" y2="12"></line>
                         <polyline points="12 19 5 12 12 5"></polyline>
@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="form-actions mt-4">
-                        <button type="submit" class="btn  btn-lg d-flex align-items-center gap-2 px-4 py-2 rounded-3 shadow" style="background-color: #6f42c1; color:white;">
+                        <button type="submit" class="btn  w-100 text-center btn-lg align-items-center  rounded-3 shadow" style="background-color: #6f42c1; color:white;">
                            Insert Product
                         </button>
                     </div>

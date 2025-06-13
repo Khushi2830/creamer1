@@ -14,7 +14,7 @@
             <div class="dashboard-header d-flex justify-content-between align-items-center mb-4">
                 <h2 class="page-title mb-0 fw-bold " style="color: #6f42c1;">Manage Product</h2>
                 <div class="d-flex gap-3">
-                    <a href="{{ route('product.create') }}" class="btn btn-outline-primary shadow-sm rounded-pill px-4">Add Product</a>
+                    <a href="{{ route('product.create') }}" class="btn  shadow-sm rounded-pill px-4" style="background-color: #6f42c1; color: white;" >Add Product</a>
                 </div>
             </div>
 
