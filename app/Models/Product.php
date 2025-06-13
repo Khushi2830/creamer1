@@ -9,8 +9,5 @@ class Product extends Model
     
     protected $guarded = [];
 
-    public function category()
-    {
-        return $this->hasOne(Category::class, "id","category_id");
-    }
+   
 }
