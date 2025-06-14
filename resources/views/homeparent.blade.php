@@ -6,10 +6,146 @@
    <title>Monginis Style Header</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    <style>
+     .highlight {
+    color: #f529a2;
+    font-weight: 600;
+  }
+  .section-purple {
+    background-color: #eae3f9;
+  }
+  .form-control {
+    max-width: 280px;
+  }
+  .btn-dark {
+    background-color: #1d1d1d;
+    color: white;
+  }
+    .highlight {
+  color: #f529a2;
+  font-weight: 600;
+}
+.btn-monginis {
+  background-color: #f529a2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+.btn-monginis:hover {
+  background-color: #d31a85;
+}
+    .section-purple {
+    background-color: #eae3f9;
+    padding: 40px 0;
+  }
+  .section-white {
+    background-color: #fff;
+    padding: 40px 0;
+  }
+  .category-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .category-heading h4 {
+    margin: 0;
+  }
+  .category-box-round img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .category-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+    .category-img {
+  width: 100%;
+  height: 250px; /* or your desired height */
+  object-fit: cover;
+  border-radius: 8px;
+}
      body {
-      background-color: #f9f9f9;
       font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf6;
     }
+
+    h2, h3 {
+      font-weight: bold;
+    }
+
+    .highlight {
+      color: #e6007e;
+    }
+
+    .category-box {
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .category-box img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .circle-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    .circle-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .btn-monginis {
+      background-color: #e6007e;
+      color: white;
+      font-weight: 500;
+      border: none;
+      padding: 6px 18px;
+      border-radius: 4px;
+    }
+
+    .btn-monginis:hover {
+      background-color: #c3006c;
+    }
+
+    .section-purple {
+      background-color: #f0e7fb;
+      padding: 40px 0;
+    }
+
+    .section-white {
+      background-color: white;
+      padding: 40px 0;
+    }
+    .father-banner {
+  background:light;
+  padding: 40px 0;
+  position: relative;
+}
+.btn-order-now:hover {
+  background: #c2185b;
+  color: white;
+}
+
+.tnc {
+  font-size: 12px;
+  color: #333;
+  margin-top: 10px;
+}
+
 
     .icon-text-row {
       display: flex;
@@ -143,11 +279,8 @@
     .dropdown-menu {
       font-weight: normal;
     }
-  </style>
-   <style>
-    body {
-      background: #f1f2f4;
-    }
+ 
+   
     .timeline {
       position: relative;
       max-width: 1000px;
@@ -218,8 +351,8 @@
         left: 0%;
       }
     }
-  </style>
-  <style>
+  
+  
     footer {
   font-family: 'Segoe UI', sans-serif;
   font-size: 15px;
@@ -263,11 +396,7 @@ footer .border-top {
   padding-top: 20px;
   margin-top: 30px;
 }
-     body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-    }
+    
 
     .section-title {
       color: #d61a7f;
@@ -310,9 +439,6 @@ footer .border-top {
         width: 80px;
       }
     }
-    body {
-      background: #f1f2f4;
-    }
     .timeline {
       position: relative;
       max-width: 1000px;
@@ -348,6 +474,7 @@ footer .border-top {
     }
     .timeline-item-left {
       left: 0;
+      style=" color: blueviolet;"
     }
     .timeline-item-right {
       left: 50%;
@@ -383,7 +510,9 @@ footer .border-top {
         left: 0%;
       }
     }
-  </style>
+     </style>
+     
+ 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #e4e0f4;">
@@ -399,7 +528,7 @@ footer .border-top {
     <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="{{ Route("home") }}">Home</a>
+          <a class="nav-link active" style="color: #5a66a0;" href="{{ Route("home") }}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Our Products</a>
@@ -429,19 +558,22 @@ footer .border-top {
     </div>
   </div>
 </nav>
-    
+    <!-- Father's Day Banner Section -->
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
 @section('content1')
 @show
-<footer class="bg-white border-top pt-5 pb-3 mt-5">
+<footer class=" border-top pt-5 pb-3 mt-5" style="background-color: #e4e0f4;">
   <div class="container">
     <div class="row text-center text-md-start">
       <!-- Logo Column -->
       <div class="col-md-3 mb-4">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Monginis_logo.svg/320px-Monginis_logo.svg.png" alt="Monginis Logo" width="130">
+        <img src="{{ asset("logo.png") }}" alt="Monginis Logo" width="130">
         <p class="mt-3">
           <a href="#">Contact Us</a><br>
           <a href="#">About Us</a><br>
@@ -452,7 +584,7 @@ footer .border-top {
 
       <!-- Products Column -->
       <div class="col-md-3 mb-4">
-        <h6 class="fw-bold">Products</h6>
+        <h6 class="fw-bold" style="color: #5a66a0;" >Products</h6>
         <p>
           <a href="#">Cakes</a><br>
           <a href="#">3D & SP Cakes</a><br>
@@ -464,7 +596,7 @@ footer .border-top {
 
       <!-- Info Column -->
       <div class="col-md-3 mb-4">
-        <h6 class="fw-bold">Company</h6>
+        <h6 class="fw-bold" style="color: #5a66a0;" >Company</h6>
         <p>
           <a href="#">Download E-brochure</a><br>
           <a href="#">Recognition & Awards</a><br>
@@ -475,7 +607,7 @@ footer .border-top {
 
       <!-- Policies & Social -->
       <div class="col-md-3 mb-4">
-        <h6 class="fw-bold">Connect with us</h6>
+        <h6 class="fw-bold" style="color: #5a66a0;" >Connect with us</h6>
         <div class="d-flex gap-2 justify-content-md-start justify-content-center">
           <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="30" alt="Facebook"></a>
           <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="30" alt="Twitter"></a>
