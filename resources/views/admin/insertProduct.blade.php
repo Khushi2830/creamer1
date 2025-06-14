@@ -44,9 +44,9 @@
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="discount_price" class="form-label fw-semibold">Discount Price</label>
-                            <input type="text" id="discount_price" name="discount_price" value="{{ old('discount_price') }}" class="form-control form-control-lg rounded-3" placeholder="Enter discount price">
-                            @error('discount_price')
+                            <label for="descount_price" class="form-label fw-semibold">Discount Price</label>
+                            <input type="text" id="descount_price" name="descount_price" value="{{ old('descount_price') }}" class="form-control form-control-lg rounded-3" placeholder="Enter discount price">
+                            @error('descount_price')
                                 <div class="text-danger small mt-1">{{$message}}</div>
                             @enderror
                         </div>

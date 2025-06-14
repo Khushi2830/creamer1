@@ -41,7 +41,7 @@
                             <td><span>{{$product->category->cat_title}}</span></td>
                             <td>{{$product->kg}}</td>
                             <td>{{$product->veg}}</td>
-                            <td><del>₹{{$product->price}}</del>₹{{$product->descount_price}}</td>
+                            <td><del>₹{{$product->price}} </del>₹{{$product->descount_price}}</td>
                             <td>{{$product->description}}</td>
                             <td><img src="{{ asset("storage/" . $product->image) }}" alt="{{ $product->title }}" class="product-image" width="100px"></td>
                             <td class="text-center">
