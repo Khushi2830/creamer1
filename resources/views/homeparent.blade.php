@@ -220,6 +220,96 @@
     }
   </style>
   <style>
+    footer {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
+  color: #111;
+}
+
+footer a {
+  text-decoration: none;
+  color: #111;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #ec008c; /* Monginis pink */
+}
+
+footer h6 {
+  color: #ec008c;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer img {
+  object-fit: contain;
+}
+
+footer .social-icons img {
+  transition: transform 0.3s;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.1);
+}
+
+footer small {
+  color: #666;
+}
+
+footer .border-top {
+  border-color: #eee !important;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+     body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+
+    .section-title {
+      color: #d61a7f;
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .content-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 15px;
+    }
+
+    .section-image {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .highlight-text {
+      color: #d61a7f;
+      font-weight: 600;
+    }
+
+    .paragraph {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .section-image {
+        width: 80px;
+      }
+    }
     body {
       background: #f1f2f4;
     }
@@ -346,6 +436,69 @@
     
 @section('content1')
 @show
+<footer class="bg-white border-top pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Logo Column -->
+      <div class="col-md-3 mb-4">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Monginis_logo.svg/320px-Monginis_logo.svg.png" alt="Monginis Logo" width="130">
+        <p class="mt-3">
+          <a href="#">Contact Us</a><br>
+          <a href="#">About Us</a><br>
+          <a href="#">Become Franchise</a><br>
+          <a href="#">Become Vendor</a>
+        </p>
+      </div>
+
+      <!-- Products Column -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Products</h6>
+        <p>
+          <a href="#">Cakes</a><br>
+          <a href="#">3D & SP Cakes</a><br>
+          <a href="#">Pastries</a><br>
+          <a href="#">Savouries</a><br>
+          <a href="#">Chocolates</a>
+        </p>
+      </div>
+
+      <!-- Info Column -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Company</h6>
+        <p>
+          <a href="#">Download E-brochure</a><br>
+          <a href="#">Recognition & Awards</a><br>
+          <a href="#">Cake Studies</a><br>
+          <a href="#">Our Factories</a>
+        </p>
+      </div>
+
+      <!-- Policies & Social -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Connect with us</h6>
+        <div class="d-flex gap-2 justify-content-md-start justify-content-center">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="30" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="30" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="30" alt="YouTube"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" width="30" alt="Instagram"></a>
+        </div>
+        <p class="mt-3">
+          <a href="#">Refund Policy</a><br>
+          <a href="#">Privacy Policy</a><br>
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row text-center pt-4 border-top">
+      <div class="col-12">
+        <small>Copyright © Monginis. All rights reserved</small><br>
+        <small>Designed & Developed by <a href="#">QPSIT</a></small>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 </body>

@@ -86,5 +86,84 @@
     </div>
 
   </div>
+   <div class="content-section text-center">
+    <img src="https://www.monginis.net/wp-content/uploads/2022/06/Untitled-design-38.png" class="section-image" alt="Secret Image">
+    <h2 class="section-title">Our Secret</h2>
+    <p class="paragraph">
+      Monginis only uses the finest ingredients in its products, ensuring the goods that are served are of the finest standards and premium quality.
+      Monginis believes that food made with the highest level of hygiene, skill, and passion brings joy to the table. Our ingredients are sourced with care,
+      handled with love, and blended into exciting gourmet creations in every stage of production, packaging, and delivery.
+    </p>
+    <p class="paragraph">
+      Combining technology and people is what ensures that our products are the best. Whether as chefs, skilled, and loving team members,
+      Monginis leads with values at the core.
+    </p>
+  </div>
+
+  <div class="content-section text-center">
+    <h2 class="section-title">Our Stores</h2>
+    <p class="paragraph">
+      Our Cake Shops are conveniently located in local markets and communities to ensure the easy availability of your favorite Monginis cakes, cupcakes,
+      and more. Whether it is for birthdays, anniversary weddings, or just an evening sweet treat, Monginis helps the customer to purchase made-to-order
+      cakes right from the cake shop nearest to them. Monginis cake shops are company-owned or franchise-owned.
+    </p>
+    <p class="paragraph">
+      For bulk orders and corporate gifting, customers can also place orders online through the website or mobile app and get the delivery at their doorstep.
+      The cakes are available across 10000+ locations in India, and gift-like packaged cakes/products are available across 10,000+ stores nationally with
+      a notable presence in MALL Super markets and Reliance outlets.
+    </p>
+  </div>
+
+  <div class="content-section text-center">
+    <h2 class="section-title">Our Moral Responsibility</h2>
+    <p class="paragraph highlight-text">Food Safety ISO 22000</p>
+
+    <h5 class="highlight-text text-start">Food Processing Sanitation/Hygiene</h5>
+    <p class="paragraph text-start">
+      The philosophical viewpoint of the Food and Drug Administration is that they would prefer to see industries fixing their plant sites compliance voluntarily
+      rather than to force compliance through FDA action.
+      The compliance team helps plant units to operate in a positive visual front making less inspection.
+      The cleaner examples are the key criteria for food product processing where empty, well-lighted areas, which gather no dust, lint, or grime,
+      are seen as characteristics key to hygiene, indicating that the site did not come from unsanitary conditions.
+    </p>
+
+    <h5 class="highlight-text text-start">Our standards</h5>
+    <p class="paragraph text-start">
+      We are an ISO 22000 certified company. We believe in ensuring the highest degree of sanitation and hygiene. We also follow Good Manufacturing practices,
+      issued by the FSSAI and FSSC 22000 organizations.
+    </p>
+
+    <h5 class="highlight-text text-start">Our Values</h5>
+    <p class="paragraph text-start">
+      Monginis has a moral responsibility of upholding all the Laws related by the FSA. We believe in selling the highest quality of raw materials
+      and ingredients in our manufacturing process. We do not compromise with deadlines nor delay any safety checks mandated by regulation.
+      All our production is 100% in compliance with Indian food safety standards. We strictly do not allow carriage of food in untreated wooden crates.
+      Our company is 100% vegetarian, and we do not use egg in our cakes. All equipment is cleaned and sterilized 10 times a day. We have regular and
+      weekly audits that ensure that there is no contamination risk.
+    </p>
+
+    <h5 class="highlight-text text-start">Good Manufacturing Practices</h5>
+    <ul class="text-start">
+      <li>We believe good sanitation is our best practice. For we believe that good sanitation will always yield good product results. If the plant is
+      unsanitary then it is super difficult to yield a safe product.</li>
+      <li>Sanitation guidelines are issued based on manufacturing Practices (GMPs 110.10 Part 110.20; 110.35 Sub Part B).</li>
+      <li>All bakeries must follow the FSSAI Act. These guidelines are revised in sync with the Codex Alimentarius by WHO and FAO.</li>
+      <li>The chief guideline is adherence to food safety at the food processor must follow:
+        <ul>
+          <li>Cleanliness of food contact surfaces under the Good Manufacturing Practices.</li>
+          <li>Maintenance of hand washing, sanitation, gloves, hairnets, and cleanliness.</li>
+          <li>Storage of perishable ingredients and finished products in hygienic, closed, chilled containers. </li>
+          <li>Sanitation of floors, ceilings, walls, and equipment with approved cleaners, every day, at key process steps including production floor. </li>
+          <li>Food handlers must wear clean protective equipment including gloves and masks. No use of jewelry or personal items is allowed in
+          packaging/processing zones.</li>
+          <li>Inspection team must ensure there are no sources of microbiological contamination inside the unit such as drains or air vents.</li>
+        </ul>
+      </li>
+      <li>Water used must be purified and fit for food production.</li>
+      <li>All raw material used is of FSSAI approved vendors only and nothing is taken outside this list.</li>
+      <li>All of our stores must pass local municipal inspections every quarter to retain our license to operate. Food is labeled and
+      expiration monitored daily. Damaged goods are removed from shelf immediately.</li>
+    </ul>
+  </div>
 
 @endsection
