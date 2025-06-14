@@ -420,7 +420,8 @@ footer .border-top {
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blogs</a>
+         <a class="nav-link" href="">Blogs</a>
+
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Wedding Cakes</a>

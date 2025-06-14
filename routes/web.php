@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
@@ -11,11 +12,13 @@ Route::get("/",[HomeController::class, "home"])->name("home");
 Route::get("/aboutUs",[HomeController::class, "about"])->name("abuout");
 
 Route::get("/histroy",[HomeController::class, "histroy"])->name("histroy");
+Route::get("/blog",[HomeController::class, "blog"])->name('blog');
 
-Route::get("/dashboard", [AdminController::class, "index"])->name("dashboard");
+Route::get("/admin", [AdminController::class, "index"])->name("dashboard");
 
 
 Route::resource("/product",ProductController::class, );
 
 Route::resource("/category", CategoryController::class, );
+Route::resource("/blog", BlogController::class, );
 
