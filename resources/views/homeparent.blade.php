@@ -298,13 +298,10 @@
 <body>
     <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #e4e0f4;">
   <div class="container">
-<<<<<<< HEAD
-    <a class="navbar-brand" href="">
-      <img src="{{ asset("logo.png") }}" alt="Monginis Logo">
-=======
+
+
     <a class="navbar-brand" href="{{ Route("home") }}">
       <img src="{{ asset("logo.png") }}" width="200vh" alt="Monginis Logo">
->>>>>>> cf7e30a2f5024df10b191abbc2eed659babfa01c
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
       <span class="navbar-toggler-icon"></span>
