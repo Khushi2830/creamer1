@@ -29,11 +29,161 @@
       font-weight: normal;
     }
   </style>
+   <style>
+    body {
+      background: #f1f2f4;
+    }
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 0;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #3d2b5a;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+    .timeline-item {
+      padding: 20px 30px;
+      position: relative;
+      width: 50%;
+    }
+    .timeline-item::after {
+      content: " ";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: #fff;
+      border: 4px solid #3d2b5a;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .timeline-item-left {
+      left: 0;
+    }
+    .timeline-item-right {
+      left: 50%;
+    }
+    .timeline-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 5px solid #e91e63;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .timeline-year {
+      font-weight: bold;
+      color: #3d2b5a;
+      margin-bottom: 10px;
+    }
+    .timeline-item-right::after {
+      left: -10px;
+    }
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 10px;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 25px;
+      }
+      .timeline-item::after {
+        left: 0;
+      }
+      .timeline-item-right {
+        left: 0%;
+      }
+    }
+  </style>
+  <style>
+    body {
+      background: #f1f2f4;
+    }
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 0;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #3d2b5a;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+    .timeline-item {
+      padding: 20px 30px;
+      position: relative;
+      width: 50%;
+    }
+    .timeline-item::after {
+      content: " ";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: #fff;
+      border: 4px solid #3d2b5a;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .timeline-item-left {
+      left: 0;
+    }
+    .timeline-item-right {
+      left: 50%;
+    }
+    .timeline-item-right::after {
+      left: -10px;
+    }
+    .timeline-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 5px solid #e91e63;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .timeline-year {
+      font-weight: bold;
+      color: #3d2b5a;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 10px;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 25px;
+      }
+      .timeline-item::after {
+        left: 0;
+      }
+      .timeline-item-right {
+        left: 0%;
+      }
+    }
+  </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #e4e0f4;">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="">
       <img src="{{ asset("logo.png") }}" alt="Monginis Logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -51,7 +201,7 @@
           <a class="nav-link" href="#">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Our History</a>
+          <a class="nav-link" href="{{ route("histroy") }}">Our History</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
