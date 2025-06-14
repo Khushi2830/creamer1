@@ -3,8 +3,8 @@
 
 @section('content1')
 
-<section class="header-section">
-  <h2 style="color: #5a66a0;" >About Us</h2>
+<section style="background-color: #5f3dc4;" class="header-section">
+  <h2 style="color: #9eace0;" >About Us</h2>
 </section>
 
 <!-- Our Story Section -->
@@ -18,7 +18,7 @@
 
       <!-- Right Side Text -->
       <div class="col-md-6">
-        <div class="story-title"style="color: #5a66a0;" >Our Story</div>
+        <div class="story-title"style="color: #5f3dc4;" >Our Story</div>
         <p class="story-text">
           Our journey began with one humble shop in Fort, Mumbai and grew to over one thousand locations throughout India under the inspiring vision of our founder, Hussein Khorakiwala in the early 1956. Since then, our family has combined their years of experience with the vision of a community of collaborative shop owners, suppliers and other partners working together to create a brand name in the market to grow their business to what it is today.
         </p>
@@ -29,7 +29,7 @@
     </div>
   </div>
 </section>
- <div class="section-heading" style="color: #5a66a0;" >Our Mission, Values, and Vision</div>
+ <div class="section-heading" style="color: #5f3dc4;" >Our Mission, Values, and Vision</div>
 
   <!-- Paragraph -->
   <div class="mission-text text-center px-3">
@@ -44,7 +44,7 @@
 
   <!-- Core Values -->
   <div class="core-values px-3">
-    <div class="core-title" style="color: #5a66a0;" >Our Core values are</div>
+    <div class="core-title" style="color:#5f3dc4;" >Our Core values are</div>
     <ol>
       <li>
         All our products and services shall be offered with the same love, care, and affection as if,
@@ -88,7 +88,7 @@
   </div>
    <div class="content-section text-center">
     <img src="https://www.monginis.net/wp-content/uploads/2022/06/Untitled-design-38.png" class="section-image" alt="Secret Image">
-    <h2 class="section-title" style="color: #5a66a0;" >Our Secret</h2>
+    <h2 class="section-title" style="color: #5f3dc4;" >Our Secret</h2>
     <p class="paragraph">
       Monginis only uses the finest ingredients in its products, ensuring the goods that are served are of the finest standards and premium quality.
       Monginis believes that food made with the highest level of hygiene, skill, and passion brings joy to the table. Our ingredients are sourced with care,
@@ -101,7 +101,7 @@
   </div>
 
   <div class="content-section text-center">
-    <h2 class="section-title" style="color: #5a66a0;">Our Stores</h2>
+    <h2 class="section-title" style="color: #5f3dc4;">Our Stores</h2>
     <p class="paragraph">
       Our Cake Shops are conveniently located in local markets and communities to ensure the easy availability of your favorite Monginis cakes, cupcakes,
       and more. Whether it is for birthdays, anniversary weddings, or just an evening sweet treat, Monginis helps the customer to purchase made-to-order
@@ -115,10 +115,10 @@
   </div>
 
   <div class="content-section text-center">
-    <h2 class="section-title" style="color: #5a66a0;" >Our Moral Responsibility</h2>
-    <p class="paragraph highlight-text" style="color: #5a66a0;" >Food Safety ISO 22000</p>
+    <h2 class="section-title" style="color: #5f3dc4;" >Our Moral Responsibility</h2>
+    <p class="paragraph highlight-text" style="color: #5f3dc4;" >Food Safety ISO 22000</p>
 
-    <h5 class="highlight-text text-start" style="color: #5a66a0;">Food Processing Sanitation/Hygiene</h5>
+    <h5 class="highlight-text text-start" style="color:#5f3dc4;">Food Processing Sanitation/Hygiene</h5>
     <p class="paragraph text-start">
       The philosophical viewpoint of the Food and Drug Administration is that they would prefer to see industries fixing their plant sites compliance voluntarily
       rather than to force compliance through FDA action.
@@ -127,13 +127,13 @@
       are seen as characteristics key to hygiene, indicating that the site did not come from unsanitary conditions.
     </p>
 
-    <h5 class="highlight-text text-start" style="color: #5a66a0;" >Our standards</h5>
+    <h5 class="highlight-text text-start" style="color: #5f3dc4;" >Our standards</h5>
     <p class="paragraph text-start">
       We are an ISO 22000 certified company. We believe in ensuring the highest degree of sanitation and hygiene. We also follow Good Manufacturing practices,
       issued by the FSSAI and FSSC 22000 organizations.
     </p>
 
-    <h5 class="highlight-text text-start" style="color: #5a66a0;" >Our Values</h5>
+    <h5 class="highlight-text text-start" style="color:#5f3dc4;" >Our Values</h5>
     <p class="paragraph text-start">
       Monginis has a moral responsibility of upholding all the Laws related by the FSA. We believe in selling the highest quality of raw materials
       and ingredients in our manufacturing process. We do not compromise with deadlines nor delay any safety checks mandated by regulation.
@@ -142,7 +142,7 @@
       weekly audits that ensure that there is no contamination risk.
     </p>
 
-    <h5 class="highlight-text text-start" style="color: #5a66a0;">Good Manufacturing Practices</h5>
+    <h5 class="highlight-text text-start" style="color: #5f3dc4;">Good Manufacturing Practices</h5>
     <ul class="text-start">
       <li>We believe good sanitation is our best practice. For we believe that good sanitation will always yield good product results. If the plant is
       unsanitary then it is super difficult to yield a safe product.</li>

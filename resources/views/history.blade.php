@@ -3,12 +3,12 @@
 
 @section('content1')
 
-     <div class="bg-dark text-center py-4 text-white fw-bold"  >Our History</div>
+     <div class=" text-center py-4 text-white fw-bold" style="background-color: #5f3dc4;"  >Our History</div>
 
 <div class="timeline">
   
    <div class="timeline">
-  <div class="timeline-item timeline-item-left">
+  <div class="timeline-item timeline-item-left"  >
     <div class="timeline-content"  >
       <div class="timeline-year">1995</div>
       <p>A New Monginis Factory At Pune</p>

@@ -6,6 +6,68 @@
    <title>Monginis Style Header</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    <style>
+
+    .container-w {
+      display: flex;
+      height: 100vh;
+    }
+
+    .form-container {
+      flex: 1;
+      background-color: #e4e0f4;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 20px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid  #5f3dc4;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    .input-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .input-icon img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .button {
+      background-color: #f06292;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .image-container {
+      flex: 1;
+      background: url('{{ asset("banner3.png") }}') no-repeat center center;
+      background-size: cover;
+    }
      .highlight {
     color: #f529a2;
     font-weight: 600;
@@ -554,6 +616,9 @@ footer .border-top {
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Wedding Cakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ Route("register") }}">Register</a>
         </li>
       </ul>
     </div>

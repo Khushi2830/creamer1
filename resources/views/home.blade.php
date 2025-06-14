@@ -16,11 +16,11 @@
     <div class="row mt-4 g-0">
      <div class="row">
          <div class="col-md-6 ">
-        <img src="https://www.monginis.net/wp-content/uploads/elementor/thumbs/Delivery-web-01-2-prb2tuv0b8xzqq9p0zvt9xnwjdfxugrk30a96dd31e.png" width="600px"alt="Order Online" class="img-fluid rounded">
+        <img src="{{ asset("banner1.png") }}" width="600px"alt="Order Online" class="img-fluid rounded">
         <button class="btn btn-monginis mt-3" style=" background-color: #5f3dc4;" >Order Online</button>
       </div>
       <div class="col-md-6">
-        <img src="https://www.monginis.net/wp-content/uploads/2022/07/Banner-web-1.png" width="600px" alt="Visit Store" class="img-fluid rounded">
+        <img src="{{ asset("banner2.png") }}" width="600px" alt="Visit Store" class="img-fluid rounded">
         <button class="btn btn-monginis mt-3" style=" background-color: #5f3dc4;" >Visit Our Nearest Store</button>
       </div>
     </div>
