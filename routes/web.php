@@ -8,6 +8,7 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get("/",[HomeController::class, "home"])->name("home");
+Route::get("/aboutUs",[HomeController::class, "about"])->name("abuout");
 
 Route::get("/dashboard", [AdminController::class, "index"])->name("dashboard");
 
