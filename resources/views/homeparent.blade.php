@@ -578,9 +578,41 @@ footer .border-top {
   .logo {
     width: 200px;
     height: 80px;
-    object-fit: contain; /* keeps proportions */
+    object-fit: contain;
   }
 </style>
+<style>
+  .cake-circle {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .text-pink {
+    color: #ff42b3; /* Customize the pink */
+  }
+
+  .btn-pink {
+    background-color: #ff42b3;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .bg-light-peach {
+    background-color: #ffe2d1;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+</style>
+
+
 
      
  
