@@ -10,7 +10,7 @@
 
     .container-w {
       display: flex;
-      height: 100vh;
+      height: 80vh;
     }
 
     .form-container {
