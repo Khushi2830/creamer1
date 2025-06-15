@@ -574,6 +574,14 @@ footer .border-top {
       }
     }
      </style>
+     <style>
+  .logo {
+    width: 200px;
+    height: 80px;
+    object-fit: contain; /* keeps proportions */
+  }
+</style>
+
      
  
 </head>
@@ -583,7 +591,7 @@ footer .border-top {
 
 
     <a class="navbar-brand" href="{{ Route("home") }}">
-      <img src="{{ asset("logo.png") }}" width="200vh" alt="Monginis Logo">
+      <img src="{{ asset("logo.png") }}" width="200vh" alt="Monginis Logo" class="logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
       <span class="navbar-toggler-icon"></span>
