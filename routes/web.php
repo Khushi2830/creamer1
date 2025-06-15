@@ -18,6 +18,7 @@ Route::get("/histroy",[HomeController::class, "histroy"])->name("histroy");
 Route::get("/blog",[HomeController::class, "blog"])->name('blog');
 
 Route::get("/admin", [AdminController::class, "index"])->name("dashboard");
+Route::get("/user", [AdminController::class, "manageUser"])->name("manageUser");
 
 
 Route::resource("/product",ProductController::class, );
