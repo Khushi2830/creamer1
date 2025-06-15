@@ -9,9 +9,10 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get("/",[HomeController::class, "home"])->name("home");
+Route::get("/index",[HomeController::class, "index"])->name("index");
 Route::get("/aboutUs",[HomeController::class, "about"])->name("abuout");
-Route::get("/register",[HomeController::class, "register"])->name("register");
-Route::get("/login",[HomeController::class, "login"])->name("login");
+Route::match(['get', 'post'], '/register', [HomeController::class, 'register'])->name('register');
+Route::match(['get', 'post'], '/login', [HomeController::class, 'login'])->name('login');
 
 Route::get("/histroy",[HomeController::class, "histroy"])->name("histroy");
 Route::get("/blog",[HomeController::class, "blog"])->name('blog');
