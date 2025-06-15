@@ -17,8 +17,8 @@ class HomeController extends Controller
     public function about(){
         return view('aboutUs');
     }
-    public function blog() {
-      return view('blog');
+    public function blog1() {
+      return view('blog1');
     }
    
   public function register(Request $req){

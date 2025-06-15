@@ -612,10 +612,6 @@ footer .border-top {
   }
 </style>
 
-
-
-     
- 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #e4e0f4;">
@@ -652,7 +648,7 @@ footer .border-top {
           </ul>
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="">Blogs</a>
+         <a class="nav-link" href="{{ Route("blog1") }}">Blogs</a>
 
         </li>
         <li class="nav-item">

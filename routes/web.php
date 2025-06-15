@@ -15,7 +15,7 @@ Route::match(['get', 'post'], '/register', [HomeController::class, 'register'])-
 Route::match(['get', 'post'], '/login', [HomeController::class, 'login'])->name('login');
 
 Route::get("/histroy",[HomeController::class, "histroy"])->name("histroy");
-Route::get("/blog",[HomeController::class, "blog"])->name('blog');
+Route::get("/blog1",[HomeController::class, "blog1"])->name("blog1");
 
 Route::get("/admin", [AdminController::class, "index"])->name("dashboard");
 
