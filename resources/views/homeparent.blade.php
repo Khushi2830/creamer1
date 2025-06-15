@@ -611,6 +611,45 @@ footer .border-top {
     display: inline-block;
   }
 </style>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #fff;
+      color: #333;
+    }
+    .blog-post {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .blog-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .blog-meta {
+      color: #555;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .blog-meta a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+    .blog-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .blog-description {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .blog-description a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+  </style>
 
 </head>
 <body>
@@ -734,7 +773,5 @@ footer .border-top {
     </div>
   </div>
 </footer>
-
-
 </body>
 </html>

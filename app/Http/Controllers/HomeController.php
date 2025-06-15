@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\blog;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -18,7 +19,8 @@ class HomeController extends Controller
         return view('aboutUs');
     }
     public function blog1() {
-      return view('blog1');
+      $blogs = blog::all();
+      return view('blog1', compact("blogs"));
     }
    
   public function register(Request $req){
