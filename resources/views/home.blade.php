@@ -67,13 +67,16 @@
 
   <!-- Shop By Cake -->
   <div class="section-white text-center">
-    <h3>Shop By <span class="highlight" style="color:#5f3dc4;">Cake</span></h3>
+     <div class="category-heading m-3 p-2 ">
+      <h3 >Shop By  <span class="highlight" style=" color: #5f3dc4;" >3D Cakes</span></h3>
+      <button class="btn btn-monginis btn-sm" style="background-color:#5f3dc4;" >View all</button>
+    </div>
     
     <div class="container mt-4">
         
       <div class="row g-4">
         <div class="col-6 col-md-3">
-          <div class="circle-img">
+          <div class="circle-img" width="200px" >
             <img src="https://www.monginis.net/wp-content/uploads/elementor/thumbs/Tall-and-Fancy-Cake-9-min-scaled-pr2q5nk8snomjr875pa6dqsqo2am0csfgkpnbldtxs.jpg"  alt="Tall and Fancy">
           </div>
           <h6>TALL AND FANCY</h6>
@@ -85,7 +88,7 @@
           <h6>EXOTIC CAKES</h6>
         </div>
         <div class="col-6 col-md-3">
-          <div class="circle-img" style="background-color: #ffe3e9;">
+          <div class="circle-img" >
             <img src="https://www.monginis.net/wp-content/uploads/elementor/thumbs/Premium-Cakes-pqov0r4xg7m39q23x1nr8mtjcapw1uhzarvjua1vww.jpg" alt="Premium Cakes">
           </div>
           <h6>PREMIUM CAKES</h6>
@@ -101,10 +104,10 @@
     </div>
   </div>
 </section>
-<div class="section-purple">
-  <div class="container">
+<div class="section-purple ">
+  <div class="container ">
     <div class="category-heading">
-      <h4>Shop By <span class="highlight" style=" color: #5f3dc4;" >3D Cakes</span></h4>
+      <h3 >Shop By  <span class="highlight" style=" color: #5f3dc4;" >3D Cakes</span></h3>
       <button class="btn btn-monginis btn-sm" style="background-color:#5f3dc4;" >View all</button>
     </div>
     <div class="row text-center">
@@ -131,7 +134,7 @@
 <div class="section-white">
   <div class="container">
     <div class="category-heading">
-      <h4>Shop By <span class="highlight" style="color:#5f3dc4;">Pastry</span></h4>
+      <h3>Shop By <span class="highlight" style="color:#5f3dc4;">Pastry</span></h3>
       <button class="btn btn-monginis btn-sm" style="background-color: #5f3dc4;">View all</button>
     </div>
     <div class="row text-center">
@@ -158,7 +161,7 @@
 <div class="section-purple">
   <div class="container">
     <div class="category-heading">
-      <h4>Shop By <span class="highlight" style="color: #5f3dc4;" >Savories</span></h4>
+      <h3>Shop By <span class="highlight" style="color: #5f3dc4;" >Savories</span></h3>
       <button class="btn btn-monginis btn-sm" style="background-color: #5f3dc4;" >View all</button>
     </div>
     <div class="row text-center">
@@ -185,7 +188,7 @@
 <div class="section-white">
   <div class="container">
     <div class="category-heading">
-      <h4>Shop By <span class="highlight" style="color: #5f3dc4;" >Chocolates</span></h4>
+      <h3>Shop By <span class="highlight" style="color: #5f3dc4;" >Chocolates</span></h3>
       <button class="btn btn-monginis btn-sm" style=" background-color: #5f3dc4;" >View all</button>
     </div>
     <div class="row text-center">
@@ -208,6 +211,7 @@
     </div>
   </div>
 </div>
+
 <div style="background-color: #5f3dc4; color:white; text-align:center; padding:15px 10px;">
   <strong>Placing your first order ? Get Upto 10% Off</strong><br>
   Use Code : <strong>monginis</strong>

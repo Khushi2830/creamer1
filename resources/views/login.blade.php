@@ -20,6 +20,9 @@
 
         <button class="button w-100 " style="background-color:  #5f3dc4;" type="submit">Sign up</button>
       </form>
+      
+            <h5 class="signup-link justify-content-center align-items-center d-flex text-muted " >sign up here. <a href="{{ Route("register") }}"> <span class="highlight" style="color: #5f3dc4;" >Register</span></a></h5>
+        
     </div>
     <div class="image-container"></div>
   </div>
