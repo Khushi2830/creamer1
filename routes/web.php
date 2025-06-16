@@ -9,7 +9,7 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get("/",[HomeController::class, "home"])->name("home");
-Route::get("/index",[HomeController::class, "index"])->name("index");
+
 Route::get("/aboutUs",[HomeController::class, "about"])->name("abuout");
 Route::match(['get', 'post'], '/register', [HomeController::class, 'register'])->name('register');
 Route::match(['get', 'post'], '/login', [HomeController::class, 'login'])->name('login');
@@ -20,9 +20,35 @@ Route::get("/blog1",[HomeController::class, "blog1"])->name("blog1");
 Route::get("/admin", [AdminController::class, "index"])->name("dashboard");
 Route::get("/user", [AdminController::class, "manageUser"])->name("manageUser");
 
+Route::middleware("auth")->group(function(){
 
-Route::resource("/product",ProductController::class, );
+   Route::prefix("admin")->group(function(){
+       Route::get("/dashboard", [AdminController::class, "index"])->name("dashboard");
+       Route::get("/user", [AdminController::class, "manageUser"])->name("manageUser");
+       Route::resource("/product",ProductController::class, );
+       Route::resource("/category", CategoryController::class, );
+       Route::resource("/blog", BlogController::class, );
+   });
+   Route::prefix("index")->group(function(){
+        Route::get("/page",[HomeController::class, "index"])->name("index");
+   });
+      
+});
+  
 
-Route::resource("/category", CategoryController::class, );
-Route::resource("/blog", BlogController::class, );
 
+
+
+
+
+
+
+
+//  Route::prefix("admin")->group(function(){
+//             Route::get("/","dashboard")->name("admin.dashboard");
+//             Route::get("/admission","manageAdmission")->name("admin.manageAdmission");
+//             Route::get("/admission/{user}/approve","StudentApprove")->name("admin.StudentApprove");
+//             Route::get("/students","manageStudent")->name("admin.manageStudent");
+//             Route::resource("categories", CategoryController::class)->except("show");
+//             Route::resource("course", CourseController::class);
+//          });
