@@ -33,20 +33,3 @@ Route::middleware("auth")->group(function(){
       
 });
   
-
-
-
-
-
-
-
-
-
-//  Route::prefix("admin")->group(function(){
-//             Route::get("/","dashboard")->name("admin.dashboard");
-//             Route::get("/admission","manageAdmission")->name("admin.manageAdmission");
-//             Route::get("/admission/{user}/approve","StudentApprove")->name("admin.StudentApprove");
-//             Route::get("/students","manageStudent")->name("admin.manageStudent");
-//             Route::resource("categories", CategoryController::class)->except("show");
-//             Route::resource("course", CourseController::class);
-//          });
