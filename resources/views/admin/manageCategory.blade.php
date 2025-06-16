@@ -31,6 +31,7 @@
                             <th>Action</th>
                         </tr>
                     </thead>
+                    
                     <tbody class="text-center">
                       @foreach ($categories as $category)
                         <tr>
