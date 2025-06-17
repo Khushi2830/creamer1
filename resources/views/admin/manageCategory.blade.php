@@ -64,6 +64,7 @@
                                     </div>
                              </td>
                       @endforeach
+                        {{ $categories -> links() }}
                     </tbody>
                 </table>
             </div>

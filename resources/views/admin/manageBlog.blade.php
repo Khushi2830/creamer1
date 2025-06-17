@@ -57,6 +57,7 @@
                                     </div>
                              </td>
                       @endforeach
+                        {{ $blogs -> links() }}
                     </tbody>
                 </table>
             </div>

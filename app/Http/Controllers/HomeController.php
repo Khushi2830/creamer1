@@ -19,7 +19,7 @@ class HomeController extends Controller
         return view('aboutUs');
     }
     public function blog1() {
-      $blogs = blog::all();
+      $blogs = blog::paginate(10);
       return view('blog1', compact("blogs"));
     }
    

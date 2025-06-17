@@ -17,7 +17,7 @@
                             <div class="stat-card">
                                 <div class="icon-box"><i class="fas fa-box"></i></div>
                                 <small>Total Category</small>
-                                <h5>59</h5>
+                                <h5 class="fw-bold">{{$countCategory}}</h5>
                                 <div class="chart-bg"></div>
                             </div>
                         </div>
@@ -26,7 +26,7 @@
                             <div class="stat-card">
                                 <div class="icon-box"><i class="fas fa-layer-group"></i></div>
                                 <small>Total Product</small>
-                                <h5>187,13</h5>
+                                <h5 class="fw-bold">{{$countProduct}}</h5>
                                 <div class="chart-bg"></div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                             <div class="stat-card">
                                 <div class="icon-box"><i class="fas fa-users"></i></div>
                                 <small>Total User</small>
-                                <h5>4,732</h5>
+                                <h5 class="fw-bold">{{$countUser}}</h5>
                                 <div class="chart-bg"></div>
                             </div>
                         </div>

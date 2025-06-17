@@ -17,5 +17,6 @@
         
      </div>
        @endforeach
+         {{ $blogs -> links() }}
   </div>
 @endsection
