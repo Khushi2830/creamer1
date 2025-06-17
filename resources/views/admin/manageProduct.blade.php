@@ -17,6 +17,12 @@
                     <a href="{{ route('product.create') }}" class="btn  shadow-sm rounded-pill px-4" style="background-color: #6f42c1; color: white;" >Add Product</a>
                 </div>
             </div>
+            @session('success')
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Success!</strong> {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endsession
 
             <div class="table-responsive shadow rounded-4 bg-white p-3">
                 <table class="table table-striped align-middle table-hover mb-0">

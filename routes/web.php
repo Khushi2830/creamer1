@@ -21,6 +21,8 @@ Route::get("/blog1",[HomeController::class, "blog1"])->name("blog1");
 Route::middleware("auth")->group(function(){
 
    Route::prefix("admin")->group(function(){
+   
+    Route::get("/", [AdminController::class, "index"])->name("dashboard");
        Route::get("/dashboard", [AdminController::class, "index"])->name("dashboard");
        Route::get("/user", [AdminController::class, "manageUser"])->name("manageUser");
        Route::resource("/product",ProductController::class, );

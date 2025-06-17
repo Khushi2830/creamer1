@@ -18,7 +18,13 @@
                     <a href="{{ Route('category.create') }}" class="btn  shadow-sm rounded-pill px-4" style="background-color: #6f42c1; color: white;" >Add Category</a>
                 </div>
             </div>
-
+              @session('success')
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Success!</strong> {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endsession
+                
             <div class="table-responsive shadow rounded-4 bg-white p-3">
                 <table class="table table-striped align-middle table-hover mb-0">
                     <thead class="table-primary text-center">
@@ -31,8 +37,11 @@
                             <th>Action</th>
                         </tr>
                     </thead>
+                    
                     <tbody class="text-center">
                       @foreach ($categories as $category)
+                      
+
                         <tr>
                             <td>{{$category->id}}</td>
                             <td>{{$category->cat_title}}</td>

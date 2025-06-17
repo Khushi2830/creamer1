@@ -652,9 +652,9 @@ footer .border-top {
   </style>
 
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #e4e0f4;">
-  <div class="container">
+<body class="m-0 p-0" >
+    <nav class="navbar navbar-expand-lg shadow-sm  " style="background-color: #e4e0f4;">
+  <div class="container ">
 
 
     <a class="navbar-brand" href="{{ Route("home") }}">
